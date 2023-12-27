@@ -1,4 +1,4 @@
-# Laravel 8 貨幣格式化和轉換
+# Laravel 10 貨幣格式化和轉換
 
 引入 torann 的 currency 套件來擴增匯率進行貨幣格式化和轉換，試算結果僅供參考，實際之換算金額將以交易當時匯率為計算基準。
 
@@ -20,11 +20,19 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate
 ```
+- 執行 __Artisan__ 指令的 __currency:manage__ 來執行貨幣新增、更新或刪除。
+```sh
+$ php artisan currency:manage {動作} {幣別 1,幣別 2,...}
+```
+- 執行 __Artisan__ 指令的 __currency:update__ 來執行匯率更新。
+```sh
+$ php artisan currency:update --{匯率應用程式介面|開放匯率|Google 財經}
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/currency` 來進行貨幣轉換。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/ACzwE7p.png)
+![](https://i.imgur.com/4U8ONU5.png)
 > 試算功能以美金為換算基準

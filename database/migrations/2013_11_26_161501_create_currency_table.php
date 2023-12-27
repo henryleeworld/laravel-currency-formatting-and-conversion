@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCurrencyTable extends Migration
+return new class extends Migration
 {
     /**
      * Currencies table name
@@ -47,4 +47,4 @@ class CreateCurrencyTable extends Migration
     {
         Schema::drop($this->table_name);
     }
-}
+};

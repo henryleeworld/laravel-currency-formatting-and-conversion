@@ -25,7 +25,7 @@ return [
     |
     */
 
-    'api_key' => '',
+    'api_key' => env('OPEN_EXCHANGE_RATES_API_KEY', ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -68,7 +68,7 @@ return [
 
         'database' => [
             'class' => \Torann\Currency\Drivers\Database::class,
-            'connection' => null,
+            'connection' => env('DB_CONNECTION', ''),
             'table' => 'currencies',
         ],
 
