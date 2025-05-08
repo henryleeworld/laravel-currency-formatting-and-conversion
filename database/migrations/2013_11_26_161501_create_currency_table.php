@@ -21,10 +21,8 @@ return new class extends Migration
 
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create($this->table_name, function ($table) {
             $table->increments('id')->unsigned();
@@ -40,10 +38,8 @@ return new class extends Migration
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::drop($this->table_name);
     }

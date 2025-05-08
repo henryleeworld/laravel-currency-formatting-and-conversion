@@ -7,10 +7,10 @@ class CurrencyController extends Controller
     public function index()
     {
         $amount = currency(1, 'USD', 'HKD', false);
-        echo '美金換算港幣：' . $amount . PHP_EOL;
+        echo __('Convert US dollars to Hong Kong dollars:') . $amount . PHP_EOL;
         $amount = currency(1, 'USD', 'SGD', false);
-        echo '美金換算新加坡幣：' . $amount . PHP_EOL;
+        echo __('Convert US dollars to Singapore dollars:') . $amount . PHP_EOL;
         $amount = currency(1, 'USD', 'AUD', false);
-        echo '美金換算澳元：' . $amount . PHP_EOL;
+        echo __('Convert US dollars to Australian dollars:') . $amount . PHP_EOL;
     }
 }

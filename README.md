@@ -1,4 +1,4 @@
-# Laravel 10 貨幣格式化和轉換
+# Laravel 11 貨幣格式化和轉換
 
 引入 torann 的 currency 套件來擴增匯率進行貨幣格式化和轉換，試算結果僅供參考，實際之換算金額將以交易當時匯率為計算基準。
 
@@ -34,5 +34,5 @@ $ php artisan currency:update --{匯率應用程式介面|開放匯率|Google �
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/4U8ONU5.png)
+![](https://i.imgur.com/oAxJtVC.png)
 > 試算功能以美金為換算基準
